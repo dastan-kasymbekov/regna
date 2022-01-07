@@ -1,36 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="UTF-8">
     <title>HomeWork10</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/media.css">
 </head>
 <body>
 <header class="header">
     <div class="container header-container">
         <img src="./images/logo%20(1).png" alt="logo" class="header-logo">
         <nav class="nav-menu">
-            <a href="#home">Home</a>
-            <a href="#about">About</a>
-            <a href="#services">Services</a>
-            <a href="#portfolio">Portfolio</a>
-            <a href="#team">Team</a>
-            <a href="#">Drop Down</a>
-            <a href="#contact">Contact</a>
+            <a href="#" for="home">Home</a>
+            <a href="#" for="about">About</a>
+            <a href="#services" for="services">Services</a>
+            <a href="#portfolio" for="portfolio">Portfolio</a>
+            <a href="#team" for="team">Team</a>
+            <a href="#" for="drop-down">Drop Down</a>
+            <a href="#contact" for="contact">Contact</a>
         </nav>
+        <div class="burger">
+            <i class="fas fa-bars"></i>
+        </div>
     </div>
 </header>
-<section class="hero">
-    <a href="#" name="home"></a>
+<section class="hero" id="home">
     <div class="container hero-container">
         <h1 class="hero-title">Welcome to Regna</h1>
         <h2 class="hero-subtitle">We are team of talented designers making websites with Bootstrap</h2>
         <a href="#" class="hero-btn">Get started</a>
     </div>
 </section>
-<section class="about">
-    <a href="#" name="about"></a>
+<section class="about" id="about">
     <div class="container">
         <div class="row">
             <div class="col-6">
@@ -95,122 +98,109 @@
         <h3 class="facts-title">Facts</h3>
         <p class="facts-subtitle">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
             doloremque</p>
-        <ul class="facts-number">
-            <li class="numbers">
-                <h4 class="numbers-title">232</h4>
-                <p>Clients</p>
-            </li>
-            <li class="numbers">
-                <h4 class="numbers-title">534</h4>
-                <p>Projects</p>
-            </li>
-            <li class="numbers">
-                <h4 class="numbers-title">1 463</h4>
-                <p>Hours Of Support</p>
-            </li>
-            <li class="numbers">
-                <h4 class="numbers-title">42</h4>
-                <p>Hard Workers</p>
-            </li>
-        </ul>
+                <div class="row">
+                    <div class="col-3 facts-number">
+                        <h4 class="numbers-title">232</h4>
+                        <p>Clients</p>
+                    </div>
+                    <div class="col-3 facts-number">
+                        <h4 class="numbers-title">534</h4>
+                        <p>Projects</p>
+                    </div>
+                    <div class="col-3 facts-number">
+                        <h4 class="numbers-title">1 463</h4>
+                        <p>Hours Of Support</p>
+                    </div>
+                    <div class="col-3 facts-number">
+                        <h4 class="numbers-title">42</h4>
+                        <p>Hard Workers</p>
+                    </div>
+                </div>
     </div>
 </section>
-<section class="services">
-    <h3 class="services-title">
-        Services
-    </h3>
-    <p class="services-subtitle">
-        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
-    </p>
-    <div class="row">
-        <div class="col-4">
-            <div class="box">
-                <div>
-                    <a href="#" name="services" class="icon"><i class="fas fa-briefcase"></i></a>
+<section class="services" id="services">
+    <div class="container">
+        <h3 class="services-title">
+            Services
+        </h3>
+        <p class="services-subtitle">
+            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+        </p>
+        <div class="row">
+            <div class="col-4">
+                <div class="box">
+                    <a href="#" class="icon"><i class="fas fa-briefcase"></i></a>
+                    <h4 class="box-title">
+                        <a href="#" class="title-link">Lorem ipsum</a>
+                    </h4>
+                    <p class="box-subtitle">
+                        Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati
+                        cupiditate non provident
+                    </p>
                 </div>
-                <h4 class="box-title">
-                    <a href="#" class="title-link">Lorem ipsum</a>
-                </h4>
-                <p class="box-subtitle">
-                    Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati
-                    cupiditate non provident
-                </p>
             </div>
-        </div>
-        <div class="col-4">
-            <div class="box">
-                <div>
+            <div class="col-4">
+                <div class="box">
                     <a href="#" class="icon"><i class="fas fa-list-ul"></i></a>
+                    <h4 class="box-title">
+                        <a href="#" class="title-link">Dolor sitema</a>
+                    </h4>
+                    <p class="box-subtitle">
+                        Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat
+                        tarad limino ata
+                    </p>
                 </div>
-                <h4 class="box-title">
-                    <a href="#" class="title-link">Dolor sitema</a>
-                </h4>
-                <p class="box-subtitle">
-                    Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat
-                    tarad limino ata
-                </p>
             </div>
-
-        </div>
-        <div class="col-4">
-            <div class="box">
-                <div>
+            <div class="col-4">
+                <div class="box">
                     <a href="#" class="icon"><i class="fas fa-signal"></i></a>
+                    <h4 class="box-title">
+                        <a href="#" class="title-link">Sed ut perspiciatis</a>
+                    </h4>
+                    <p class="box-subtitle">
+                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                        pariatur
+                    </p>
                 </div>
-                <h4 class="box-title">
-                    <a href="#" class="title-link">Sed ut perspiciatis</a>
-                </h4>
-                <p class="box-subtitle">
-                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                    pariatur
-                </p>
             </div>
-
-        </div>
-        <div class="col-4">
-            <div class="box">
-                <div>
+            <div class="col-4">
+                <div class="box">
                     <a href="#" class="icon"><i class="fas fa-binoculars"></i></a>
+                    <h4 class="box-title">
+                        <a href="#" class="title-link">Magni dolores</a>
+                    </h4>
+                    <p class="box-subtitle">
+                        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim
+                        id
+                        est laborum
+                    </p>
                 </div>
-                <h4 class="box-title">
-                    <a href="#" class="title-link">Magni dolores</a>
-                </h4>
-                <p class="box-subtitle">
-                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
-                    est laborum
-                </p>
             </div>
-
-        </div>
-        <div class="col-4">
-            <div class="box">
-                <div>
+            <div class="col-4">
+                <div class="box">
                     <a href="#" class="icon"><i class="fas fa-sun"></i></a>
+                    <h4 class="box-title">
+                        <a href="#" class="title-link">Nemo enim</a>
+                    </h4>
+                    <p class="box-subtitle">
+                        At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum
+                        deleniti atque
+                    </p>
                 </div>
-                <h4 class="box-title">
-                    <a href="#" class="title-link">Nemo enim</a>
-                </h4>
-                <p class="box-subtitle">
-                    At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum
-                    deleniti atque
-                </p>
             </div>
-
-        </div>
-        <div class="col-4">
-            <div class="box">
-                <div>
+            <div class="col-4">
+                <div class="box">
                     <a href="#" class="icon"><i class="fas fa-calendar"></i></a>
+                    <h4 class="box-title">
+                        <a href="#" class="title-link">Eiusmod Tempor</a>
+                    </h4>
+                    <p class="box-subtitle">
+                        Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis
+                        est
+                        eligendi
+                    </p>
                 </div>
-                <h4 class="box-title">
-                    <a href="#" class="title-link">Eiusmod Tempor</a>
-                </h4>
-                <p class="box-subtitle">
-                    Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est
-                    eligendi
-                </p>
             </div>
-
         </div>
     </div>
 </section>
@@ -228,9 +218,9 @@
             </div>
         </div>
     </div>
+    </div>
 </section>
-<section class="portfolio">
-    <a name="portfolio"></a>
+<section class="portfolio" id="portfolio">
     <div class="container">
         <h3 class="portfolio-title">Portfolio</h3>
         <p class="portfolio-subtitle">
@@ -336,8 +326,7 @@
         </div>
     </div>
 </section>
-<section class="team">
-    <a href="#" name="team"></a>
+<section class="team" id="team">
     <div class="container">
         <h3 class="team-title">Team</h3>
         <p class="team-subtitle">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
@@ -422,8 +411,7 @@
         </div>
     </div>
 </section>
-<section class="contact">
-    <a href="#" name="contact"></a>
+<section class="contact" id="contact">
     <h3 class="contact-title">Contact</h3>
     <p class="contact-subtitle">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
         doloremque</p>
@@ -432,8 +420,8 @@
                 width="1350" height="380" style="border:0;" allowfullscreen="" loading="lazy" class="maps"></iframe>
     </div>
     <div class="container contact-container">
-        <div class="row">
-            <div class="col-6">
+        <div class="row contact-row">
+            <div class="col-3 contact-col">
                 <div class="contact-icon-wrapper">
                     <div class="feedback-icon">
                         <img class="fb-icon"
@@ -470,7 +458,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-6">
+            <div class="col-5">
                 <form class="feedback">
                     <input type="text" placeholder="Your Name">
                     <input type="text" placeholder="Your Email">
@@ -492,5 +480,8 @@
         </div>
     </div>
 </footer>
+
+
+<script type="text/javascript" src="./script.js"></script>
 </body>
 </html>
